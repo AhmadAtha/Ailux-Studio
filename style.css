@@ -382,3 +382,47 @@ body {
     color: var(--white);
     text-align: center;
 }
+
+/* Responsivitas Mobile */
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
