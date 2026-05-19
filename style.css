@@ -332,6 +332,8 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .contact-btn:hover {
@@ -367,10 +369,20 @@ body {
     background: var(--white);
 }
 
+.location-section .section-title {
+    text-align: center;
+    color: var(--black);
+}
+
 .map-container {
     max-width: 100%;
     margin-top: 60px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+
+.map-container iframe {
+    border: 0;
     border-radius: 15px;
 }
 
@@ -380,4 +392,47 @@ body {
     background: var(--black);
     color: var(--white);
     text-align: center;
+}
+
+/* Responsivitas Mobile */
+@media (max-width: 768px) {
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .badge {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .about-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
