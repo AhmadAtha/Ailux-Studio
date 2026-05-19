@@ -8,6 +8,44 @@
     <title>Ailux Studio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Responsivitas Mobile */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 0;
+            }
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+            .hero-content {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 40px;
+            }
+            .hero-image img {
+                max-width: 250px;
+                margin-bottom: 20px;
+            }
+            .about-grid {
+                grid-template-columns: 1fr !important;
+            }
+            .contact-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,11 +58,11 @@
                     <span class="logo-text">AILUX STUDIO</span>
                 </div>
                 <nav class="nav">
-                    <a href="#home"class="nav-link">Home</a>
-                    <a href="#about"class="nav-link">About</a>
-                    <a href="#project"class="nav-link">Project</a>
-                    <a href="photo.html"class="nav-link">Photo</a>
-                    <a href="#contact" class="nav-link">contact</a>
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#project" class="nav-link">Project</a>
+                    <a href="photo.html" class="nav-link">Photo</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </nav>
                 <div class="social-icons">
                     <a href="https://www.instagram.com/ahmadz10.1?igsh=a3pyc2wxN2FsZmZx" target="_blank" class="social-link" aria-label="Instagram">
@@ -49,7 +87,7 @@
                     <h1>I'm Ailux Studio, Designer & Photographer</h1>
                 </div>
                 <div class="hero-image">
-                    <img src="ICON/IMG_20260519_080711.png">
+                    <img src="ICON/IMG_20260519_080711.png" alt="Ailux Studio Hero Image">
                 </div>
             </div>
         </div>
