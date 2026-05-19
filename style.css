@@ -107,13 +107,13 @@ body {
 }
 
 .badge {
-        background-color: #000000;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-
+    display: inline-block;
+    background: var(--black);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
 }
 
 .hero h1 {
