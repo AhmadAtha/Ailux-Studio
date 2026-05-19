@@ -39,6 +39,10 @@ body {
     gap: 10px;
 }
 
+.logo img {
+    height: 40px;
+}
+
 .logo-text {
     font-size: 20px;
     font-weight: bold;
@@ -92,6 +96,10 @@ body {
     font-weight: bold;
     margin-bottom: 60px;
     color: #ffffff;
+}
+
+.section-desain {
+    margin-top: 50px;
 }
 
 /* Card */
