@@ -211,11 +211,11 @@ body {
     .header .nav-wrapper {
         flex-direction: column;
         align-items: center;
-        gap: 15px; /* Adjust gap for stacked items */
+        gap: 10px;
     }
 
     .header .nav {
-        flex-direction: column; /* Stack nav links */
+        flex-direction: row; 
         gap: 10px; /* Adjust gap between stacked links */
     }
 
@@ -229,14 +229,15 @@ body {
     }
 
     .page-title {
-        font-size: 48px; /* Smaller font size for tablets */
-        margin-bottom: 30px;
+        font-size: 1.8rem;
+        margin-top: 20px;
     }
 
     /* Gallery grid adjustments */
     .gallery-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
-        gap: 15px;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+        gap: 10px;
+        padding: 10px;
     }
 
     /* Card horizontal adjustments (for about/project sections) */
@@ -336,3 +337,6 @@ body {
         gap: 10px;
     }
 }
+
+/* Mencegah scroll horizontal */
+body { overflow-x: hidden; }
