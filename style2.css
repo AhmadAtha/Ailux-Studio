@@ -102,6 +102,56 @@ body {
     margin-top: 50px;
 }
 
+/* Project Section Styles */
+.project-carousel {
+    margin-bottom: 60px;
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.carousel-content {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    color: #000000;
+}
+
+.carousel-text {
+    flex: 1;
+}
+
+.github-link {
+    color: #000000;
+    background: #f5f5f5;
+    border-radius: 50%;
+    padding: 10px;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.carousel-image-project {
+    flex: 0 0 300px;
+}
+
+.carousel-image-project img {
+     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
 /* Card */
 .card-horizontal {
     background-color: #ffffff;
@@ -289,6 +339,12 @@ body {
     /* Project carousel adjustments */
     .project-carousel .carousel-content {
         flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+    .carousel-image-project {
+        flex: none;
+        width: 100%;
     }
 
     .project-carousel .carousel-text {
